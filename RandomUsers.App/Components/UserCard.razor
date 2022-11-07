@@ -1,0 +1,18 @@
+﻿<div class="col">
+    <div class="card rounded-3">
+        <div class="card-header py-3">
+            <h4>@UserModel.FirstName @UserModel.LastName</h4>
+        </div>
+        <div class="card-body text-center">
+            <div class="mb-3">
+                <img src="@UserModel.Picture" class="rounded-circle"/>
+            </div>
+            <div class="mb-3">
+                <label>Gender: @UserModel.Gender</label>
+            </div>
+            <div class="mb-3">
+                <label>Address: @UserModel.Location.Street.Number @UserModel.Location.Street.Name, @UserModel.Location.City, @UserModel.Location.State @UserModel.Location.Postcode</label>
+            </div>
+        </div>
+    </div>
+</div>
